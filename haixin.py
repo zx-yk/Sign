@@ -20,5 +20,5 @@ headers = {
 }
 
 data = {"code":"a55ca53d96bd43be81c0df7ced7ef2b0","gameScore":"600","gameSignature":"b06c6dd5fdfc100595a3c8de37379da7"}
-response = requests.post(url, headers=headers, data=data)
+response = requests.post(url, headers=headers, json=data)
 print(response.content.decode())
