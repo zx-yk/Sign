@@ -1,0 +1,69 @@
+import time
+2
+​
+3
+import requests
+4
+​
+5
+url = "https://cps.hisense.com/customerAth/activity-manage/activityUser/participate"
+6
+​
+7
+headers = {
+8
+​
+9
+    "Host": "cps.hisense.com",
+10
+​
+11
+    "Connection": "keep-alive",
+12
+​
+13
+    "Accept": "application/json, text/javascript, */*; q=0.01",
+14
+​
+15
+    "X-Requested-With": "XMLHttpRequest",
+16
+​
+17
+    "User-Agent": "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 NetType/WIFI MicroMessenger/7.0.20.1781(0x6700143B) WindowsWechat(0x6309092b) XWEB/8555 Flue",
+18
+​
+19
+    "Content-Type": "application/json",
+20
+​
+21
+    "Origin": "https://cps.hisense.com",
+22
+​
+23
+    "Sec-Fetch-Site": "same-origin",
+24
+​
+25
+    "Sec-Fetch-Mode": "cors",
+26
+​
+27
+    "Sec-Fetch-Dest": "empty",
+28
+​
+29
+    "Referer": "https://cps.hisense.com/static/game_playDiglett.shtml?code=a55ca53d96bd43be81c0df7ced7ef2b0","Accept-Language": "zh-CN,zh;q=0.9",
+    
+    "Cookie": "BIGipServerPOOL_DMZOCP_9080=!nN4jUYmcmFubc6YR4GLrgeLVCXJLUy11h0HR+eScO/NVNDpPF+EJzu8anRdQUJdIdsa0SMwobgUySfg=; TOKEN_ACTIVITY=MWFKSmdEQUlhYjRyd0s5ejJBeEZGSDU3U3dCQzlNT0cwTUZhQmVQVUtqamQxMW9xeVRNdnF1TVRwdVVtaXM4bmhud3Z2WXpMUXFXT1l1M3RNd3MyYlZvdi1LamlsUUJuQVVyazQ5OEVYNDZrNzY5Vk1aTlFqV242TjM1Znl5OW1mVGdKMXNNcTRHdVByWG9oMjI0cHNRZmFyWTFhTHBRUVFzQ1hiaXZGX09BQnluTXAzMG5YQVNzYmQyWEo1OVNCbHlGSmZNcmtqeQ; SCORE_CENTER_IAM_AUTH_ID=4c0aeb79-5756-4e41-b804-801021d930c4; SCORE_SCENTER=YXBpOmdhdGV3YXk6bG9naW46dXNlcjoxMDU2MzI4NzU=; BIGipServerPOOL_OCP_JUCLOUD_80=!pWFZcKtt0LTfwSIlLGyqlytKq47lSLkGKS/GKkm2Uju3d4BrpleZSAenLCV0TLsTAvKk8Y+lSeTRcwQ=",
+
+    "Accept-Encoding": "gzip, deflate"
+
+}
+
+data = {"code":"a55ca53d96bd43be81c0df7ced7ef2b0","gameScore":"600","gameSignature":"b06c6dd5fdfc100595a3c8de37379da7"}
+
+response = requests.post(url, headers=headers, data=data)print(response.content.decode())​
+43
+print(response.content.decode())
