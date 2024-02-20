@@ -13,7 +13,8 @@ headers = {
     "Sec-Fetch-Site": "same-origin",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Dest": "empty",
-    "Referer": "https://cps.hisense.com/static/game_playDiglett.shtml?code=a55ca53d96bd43be81c0df7ced7ef2b0","Accept-Language": "zh-CN,zh;q=0.9",
+    "Referer": "https://cps.hisense.com/static/game_playDiglett.shtml?code=a55ca53d96bd43be81c0df7ced7ef2b0",
+    "Accept-Language": "zh-CN,zh;q=0.9",
     "Cookie": "BIGipServerPOOL_DMZOCP_9080=!nN4jUYmcmFubc6YR4GLrgeLVCXJLUy11h0HR+eScO/NVNDpPF+EJzu8anRdQUJdIdsa0SMwobgUySfg=; TOKEN_ACTIVITY=MWFKSmdEQUlhYjRyd0s5ejJBeEZGSDU3U3dCQzlNT0cwTUZhQmVQVUtqamQxMW9xeVRNdnF1TVRwdVVtaXM4bmhud3Z2WXpMUXFXT1l1M3RNd3MyYlZvdi1LamlsUUJuQVVyazQ5OEVYNDZrNzY5Vk1aTlFqV242TjM1Znl5OW1mVGdKMXNNcTRHdVByWG9oMjI0cHNRZmFyWTFhTHBRUVFzQ1hiaXZGX09BQnluTXAzMG5YQVNzYmQyWEo1OVNCbHlGSmZNcmtqeQ; SCORE_CENTER_IAM_AUTH_ID=4c0aeb79-5756-4e41-b804-801021d930c4; SCORE_SCENTER=YXBpOmdhdGV3YXk6bG9naW46dXNlcjoxMDU2MzI4NzU=; BIGipServerPOOL_OCP_JUCLOUD_80=!pWFZcKtt0LTfwSIlLGyqlytKq47lSLkGKS/GKkm2Uju3d4BrpleZSAenLCV0TLsTAvKk8Y+lSeTRcwQ=",
     "Accept-Encoding": "gzip, deflate"
 }
