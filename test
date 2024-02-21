@@ -11,3 +11,27 @@ while True:
         success_count += 1
     else:
         failure_count += 1
+elapsed_seconds = time.time() - start_time
+59
+​
+60
+    
+61
+​
+62
+    if elapsed_seconds >= 60:
+63
+​
+64
+        print(f"Total Requests: {total_requests}")
+65
+​
+66
+        print(f"Success Count: {success_count}")
+67
+​
+68
+        print(f"Failure Count: {failure_count}")
+69
+​
+70
