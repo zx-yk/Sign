@@ -32,6 +32,7 @@ while True:
     # 提取obtainScore和resultCode的值
     obtain_score = data["data"]["obtainScore"]
     result_code = data["resultCode"]
+    print("打地鼠获得", obtain_score，"积分")
     if result_code == 0000:
         print("打地鼠获得", obtain_score，"积分")
-    #print("resultCode:", result_code)
+    print("resultCode:", result_code)
