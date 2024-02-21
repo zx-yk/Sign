@@ -20,10 +20,7 @@ headers = {
     "Accept-Encoding": "gzip, deflate"
 }
 data = {"code":"a55ca53d96bd43be81c0df7ced7ef2b0","gameScore":"60","gameSignature":"b06c6dd5fdfc100595a3c8de37379da7"}
-start_time = time.time()
-total_requests = 0
-success_count = 0
-failure_count = 0
+
 while True:
     response = requests.post(url, headers=headers, json=data)
     #time.sleep(0.4)  # 200毫秒延迟
