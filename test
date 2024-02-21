@@ -16,3 +16,14 @@ elapsed_seconds = time.time() - start_time
         print(f"Total Requests: {total_requests}")
         print(f"Success Count: {success_count}")
         print(f"Failure Count: {failure_count}")
+json_str = "{...}"  # 将您的JSON字符串替换为实际字符串
+
+# 解析JSON字符串为Python字典
+data = json.loads(json_str)
+
+# 提取obtainScore和resultCode的值
+obtain_score = data["data"]["obtainScore"]
+result_code = data["resultCode"]
+
+print("obtainScore:", obtain_score)
+print("resultCode:", result_code)
