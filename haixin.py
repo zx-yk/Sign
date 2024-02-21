@@ -31,8 +31,8 @@ while True:
     # 解析JSON字符串为Python字典
     result_data = json.loads(json_str)
     # 提取obtainScore和resultCode的值
-    obtain_score = data["data"]["obtainScore"]
-    result_code = data["resultCode"]
+    obtain_score = result_data["obtainScore"]
+    result_code = result_data["resultCode"]
     print("打地鼠获得", obtain_score,"积分")
     if result_code == 0000:
         print("打地鼠获得", obtain_score,"积分")
