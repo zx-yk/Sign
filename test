@@ -30,6 +30,10 @@ print("resultCode:", result_code)
 
 
 
+https://cps.hisense.com/static/game_playDiglett.shtml?code=a55ca53d96bd43be81c0df7ced7ef2b0
+
+
+
 import time
 import requests
 
