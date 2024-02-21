@@ -38,4 +38,5 @@ while True:
         print("打地鼠获得", obtain_score,"积分")
     else:
         print("打地鼠次数不足，尝试兑换次数")
+        break
     print("resultCode:", result_code)
