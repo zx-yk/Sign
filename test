@@ -23,7 +23,91 @@ data = json.loads(json_str)
 
 # 提取obtainScore和resultCode的值
 obtain_score = data["data"]["obtainScore"]
-result_code = data["resultCode"]
+result_code = data["resultCode"]import time
+2
+​
+3
+import requests
+4
+​
+5
+url = "https://cps.hisense.com/customerAth/activity-manage/activityUser/participate"
+6
+​
+7
+headers = {
+8
+​
+9
+    "Host": "cps.hisense.com",
+10
+​
+11
+    "Connection": "keep-alive",
+12
+​
+13
+    "Accept": "application/json, text/javascript, */*; q=0.01",
+14
+​
+15
+    "X-Requested-With": "XMLHttpRequest",
+16
+​
+17
+    "User-Agent": "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 NetType/WIFI MicroMessenger/7.0.20.1781(0x6700143B) WindowsWechat(0x6309092b) XWEB/8555 Flue",
+18
+​
+19
+    "Content-Type": "application/json",
+20
+​
+21
+    "Origin": "https://cps.hisense.com",
+22
+​
+23
+    "Sec-Fetch-Site": "same-origin",
+24
+​
+25
+    "Sec-Fetch-Mode": "cors",
+26
+​
+27
+    "Sec-Fetch-Dest": "empty","Referer": "https://cps.hisense.com/static/game_sign.shtml?code=74f51fd29cea445e9b95eb0dd14fba40",
+30
+​
+31
+    "Accept-Encoding": "gzip, deflate",
+32
+​
+33
+    "Cookie": "BIGipServerPOOL_DMZOCP_9080=!aAXEKnUbs0gx9QkR4GLrgeLVCXJLUz09oadC9gaZuDlLcwI05eRQ/A3usKMMQgzFjh7hd8hMnM3XGak=; TOKEN_ACTIVITY=MWE2THNPQUVwOUlHS1g0bjN1aW5naHh0a2JabVhCUkRXMDN4SWhhQkxoeExaMVNFaHEwZURHZzY5Z2dQQWhNa0MtN3VFZDl6NjhaZmp3dmx6dlQwZ3hMc1A1bFd5Q2Jkd3VsbmRjR2xwOWlMOXdwX2YtZkxxaTl2NG5uMUI2alprWDc2TFZEMHhtTkhRRzVGNTJ0YkFyNUcyN3FDYmhQZzBPUWFxZkkyck9UQTFPNXM5Z3BteXdRcGtuMndrVWwxN21SMk83czlEVQ; SCORE_CENTER_IAM_AUTH_ID=cc71eb82-a5f7-4476-84e7-99fc579eb655; SCORE_SCENTER=YXBpOmdhdGV3YXk6bG9naW46dXNlcjoxMDU2MzIxNTM=; BIGipServerPOOL_OCP_JUCLOUD_80=!wjePA/qhRmz3IAslLGyqlytKq47lSI/2iW462cTKa6ETdCTkbZjOtHspF/nlSINZWBEOsUFFJhN+5F0=",
+34
+​
+35
+    "Accept-Language": "zh-CN,zh;q=0.9"
+36
+​
+37
+}
+38
+​
+39
+data = {"code":"74f51fd29cea445e9b95eb0dd14fba40"}
+40
+​
+41
+response = requests.post(url, headers=headers, json=data)
+42
+​
+43
+print(response.content.decode())
+44
+​
+45
+​
 
 print("obtainScore:", obtain_score)
 print("resultCode:", result_code)
